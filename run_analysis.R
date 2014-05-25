@@ -3,9 +3,9 @@ library(Hmisc)
 
 cleanName <- function(n) {
     n <- sub('tBody','timeDomainBody',n)
-    n <- sub('fBody','transformedBody',n)    
+    n <- sub('fBody','frequencyDomainBody',n)    
     n <- sub('tGravity','timeDomainGravity',n)
-    n <- sub('fGravity','transformedGravity',n)
+    n <- sub('fGravity','frequencyDomainGravity',n)
     n <- sub('Acc','Accelerometer',n)
     n <- sub('Gyro','Gyroscope',n)
     n <- sub('-mean','Mean',n)
